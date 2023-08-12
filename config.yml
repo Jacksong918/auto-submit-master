@@ -18,7 +18,7 @@ notifyOption:
     #############2 发信方邮箱账号密码,smtp服务器qq邮箱为smtp.qq.com,163邮箱为smtp.163.com
     smtpOption:
         userName: '776109754@qq.com'
-        passWord: 'xkldhsbrzkolbebb'
+        passWord: ''
         server: 'smtp.qq.com'
     #############3 完善qmsgKey即可,需要完善-user字段中qId参数，详见下方例子
     qmsgOption:
@@ -52,7 +52,7 @@ users:
 #        # username 学号或者工号
 #        username: '19130111'
 #        # password 密码
-#        password: 'songjh0918'
+#        password: ''
 #        # 地址信息
 #        address: '江苏省苏州市昆山市漓江路53号'
 #        notifyOption:
@@ -94,56 +94,6 @@ users:
 ##                title: 今天如有隔离情况（居家隔离、集中隔离）请填写具体情况和隔离地点
 ##                value: Null
 
-#    - user:
-#        # 任务类型（收集：0、签到：1、查寝：2、政工签到：3、教师工作日志：4）
-#        type: 0
-#        # school 学校全称
-#        schoolName: '南京晓庄学院'
-#        # username 学号或者工号
-#        username: '19130111'
-#        # password 密码
-#        password: 'songjh0918'
-#        # 地址信息
-#        address: '江苏省南京市江宁区吉祥路3601号'
-#        notifyOption:
-#            # method和顶部参数一致，不填默认按照顶部参数执行
-#            # method: 0
-#            # rcvAcc为接受消息的账号，可以为Email账号、QQ号、或者是企业微信ID(@all为全体)
-#            rcvAcc: '776109754@qq.com'
-#        # 附上经纬度查询地址（请自行选择自己的学校地址，address，lon，lat都要填查询到的）：http://api.map.baidu.com/lbsapi/getpoint/index.html
-#        # lon 经度
-#        lon: 118.910263
-#        # lat 纬度
-#        lat: 31.899953
-#        # 是否检查表单的标题（1代表检查，0代表不检查）
-#        checkTitle: 1
-#        # 表单信息
-#        forms:
-#            - form:
-#                title: 你今天的体温状况？
-#                value: 正常（37.3℃以下）
-#            # - form:
-#            #     title: 你今天是否在校？
-#            #     value: 不在校
-#            - form:
-#                title: 今天健康码颜色（以当地健康码为准）？
-#                value: 绿码
-#            - form:
-#                title: 今天你是否位于中高风险地区？
-#                value: 否
-#            - form:
-#                title: 今天你及共同居住人是否有发热、咳嗽、胸闷、腹泻等症状？
-#                value: 否
-##            - form:
-##                title: 今天你及共同居住人出现体温异常，且有咳嗽、胸闷、腹泻等症状，请填写具体情况
-##                value: Null
-#            - form:
-#                title: 今天你及共同居住人是否有隔离情况？
-#                value: 无隔离
-##            - form:
-##                title: 今天如有隔离情况（居家隔离、集中隔离）请填写具体情况和隔离地点
-##                value: Null
-
 #     以下配置为签到
     - user:
         # 任务类型（收集：0、签到：1、查寝：2）
@@ -153,7 +103,7 @@ users:
         # username 学号或者工号
         username: '19130111'
         # password 密码
-        password: 'songjh0918'
+        password: ''
         # address 地址，定位信息
         address: '江苏省南京市江宁区吉祥路3601号'
         notifyOption:
@@ -186,47 +136,6 @@ users:
             - form:
                 title: 今天你及共同居住人是否有隔离情况？
                 value: 无隔离
-#    - user:
-#        # 任务类型（收集：0、签到：1、查寝：2）
-#        type: 1
-#        # school 学校全称
-#        schoolName: '南京晓庄学院'
-#        # username 学号或者工号
-#        username: '19130114'
-#        # password 密码
-#        password: 'xjc951357'
-#        # address 地址，定位信息
-#        address: '江苏省南京市江宁区吉祥路3601号'
-#        notifyOption:
-#            # method和顶部参数一致，不填默认按照顶部参数执行
-#            # method: 0
-#            # rcvAcc为接受消息的账号，可以为Email账号、QQ号、或者是企业微信ID(@all为全体)
-#            rcvAcc: '2684033506@qq.com'
-#        # 附上经纬度查询地址（请自行选择自己的学校地址，address，lon，lat都要填查询到的）：http://api.map.baidu.com/lbsapi/getpoint/index.html
-#        # lon 经度
-#        lon: 118.910108
-#        # lat 纬度
-#        lat: 31.89995
-#        # abnormalReason 反馈信息（这个一般不用配置，但是不能删除，删除会报错）
-#        abnormalReason: ''
-#        # photo 签到照片，不需要可不填，或者直接删除
-#        photo:
-#        # 是否检查表单的标题（1代表检查，0代表不检查）
-#        checkTitle: 1
-#        # 表单信息
-#        forms:
-#            - form:
-#                title: 你今天的体温状况？
-#                value: 正常（37.3℃以下）
-#            - form:
-#                title: 今天健康码颜色（以当地健康码为准）？
-#                value: 绿码
-#            - form:
-#                title: 今天你及共同居住人是否有发热、咳嗽、胸闷、腹泻等症状？
-#                value: 否
-#            - form:
-#                title: 今天你及共同居住人是否有隔离情况？
-#                value: 无隔离
 
     # 第四个用户配置
     # 以下配置为查寝
@@ -238,7 +147,7 @@ users:
 #        # username 学号或者工号
 #        username: '19130111'
 #        # password 密码
-#        password: 'songjh0918'
+#        password: ''
 #        # 地址信息
 #        address: '江苏省南京市江宁区吉祥路3601号'
 #        notifyOption:
